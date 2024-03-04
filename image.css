@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* justify-content: center;
+    align-items: center;
+    position: relative; */
+}
+.container{
+    height: 360px;
+    width: 356px;
+    border: 2px solid black;
+    position: relative;
+}
+.content{
+    border: 2px solid black;
+    background-color: yellow;
+    height: 200px;
+    width: 356px;
+    position: absolute;
+    top: 360px;
+    transition: all 0.2s;
+}
+.container:hover > .content{
+    top: 100px;
+}
